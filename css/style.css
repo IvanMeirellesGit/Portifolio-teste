@@ -11,7 +11,7 @@
   --bg-color-primary: #000;
   --bg-color-secondary: #00ff08;
   --bg-color-tertiary: hsl(0, 0%, 25%);
-  --bg-color-transparent-primary: hsla(0, 0%, 0%, 0.566);
+  --bg-color-overlay: hsla(0, 0%, 0%, 0.566);
   --shadow-color-primary: hsla(122, 100%, 50%, 0.456);
   --shadow-color-secondary: hsla(0, 0%, 100%, 0.434);
 }
@@ -65,9 +65,11 @@ header > .interface {
   align-items: center;
   justify-content: space-between;
 }
-.logo h1 a {
+.logo h1 {
   color: var(--color-primary);
+  cursor: pointer;
 }
+
 header a {
   display: inline-block;
   color: var(--color-tertiary);
@@ -75,7 +77,7 @@ header a {
   transition: 0.2s;
 }
 
-header a:hover {
+header nav.menu-desktop a:hover {
   color: var(--color-primary);
   transform: scale(1.05);
 }
@@ -84,11 +86,75 @@ header nav ul {
   list-style-type: none;
 }
 
-header nav ul li {
+header nav.menu-desktop ul li {
   display: inline-block;
   padding: 0 40px;
 }
 
+/*Estilo do menu mobile*/
+
+.menu-mobile {
+  background-color: var(--bg-color-primary);
+  height: 100vh;
+  width: 0%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.menu-mobile.abrir-menu {
+  width: 65%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.btn-abrir-menu i {
+  color: var(--color-secondary);
+  font-size: 2.6rem;
+  display: none;
+}
+
+.menu-mobile .btn-fechar {
+  padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+  color: var(--color-secondary);
+  font-size: 2.6rem;
+}
+
+.menu-mobile nav ul {
+  text-align: right;
+}
+
+.menu-mobile nav ul li a {
+  display: block;
+  color: var(--color-primary);
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 20px 8%;
+}
+
+.menu-mobile nav ul li a:hover {
+  background-color: var(--bg-color-secondary);
+  color: var(--color-quaternary);
+}
+
+.overlay-menu {
+  background-color: var(--bg-color-overlay);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  display: none;
+}
 h2.titulo {
   color: var(--color-primary);
   font-size: 2.2rem;
@@ -259,7 +325,7 @@ section.portifolio .flex {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: var(--bg-color-transparent-primary);
+  background-color: var(--bg-color-overlay);
   border-radius: 40px;
   font-size: 1.4rem;
   font-weight: 600;
@@ -374,6 +440,10 @@ footer .line-footer p a {
 
   header {
     padding: 20px 8%;
+  }
+
+  .btn-abrir-menu i {
+    display: block;
   }
 
   h2.titulo {
