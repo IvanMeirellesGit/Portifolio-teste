@@ -105,6 +105,7 @@ header nav.menu-desktop ul li {
   right: 0;
   z-index: 10;
   transition: 0.3s;
+  box-shadow: 3px 3px 12px var(--bg-color-secondary);
 }
 
 .menu-mobile.abrir-menu {
@@ -140,6 +141,7 @@ header nav.menu-desktop ul li {
   font-weight: 300;
   font-size: 1rem;
   padding: 20px 8%;
+  box-shadow: 0px 0px 1px var(--bg-color-secondary);
 }
 
 .menu-mobile nav ul li a:hover {
