@@ -208,35 +208,42 @@ section.topo-do-site .flex {
   }
 }
 
-/*Minhas especialidades*/
+/*Minhas habilidades*/
 
-section.especialidades {
+section.habilidades {
   padding: 40px 4%;
 }
 
-section.especialidades .flex {
-  gap: 50px;
+section.habilidades .flex {
+  gap: 45px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.especialidades .especialidades-box {
+.habilidades .habilidades-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: var(--color-primary);
   padding: 40px;
   margin-top: 45px;
   border-radius: 20px;
   transition: 0.2s;
+  width: 14rem;
 }
 
-.especialidades .especialidades-box:hover {
+.habilidades .habilidades-box:hover {
   transform: scale(1.05);
   box-shadow: 3px 3px 12px var(--shadow-color-secondary);
 }
 
-.especialidades .especialidades-box i {
-  color: var(--color-secondary);
-  font-size: 5rem;
+.habilidades .habilidades-box img {
+  width: 80%;
 }
 
-.especialidades .especialidades-box h3 {
+.habilidades .habilidades-box h3 {
+  text-align: center;
   font-size: 1.6rem;
   margin: 15px 0px;
 }
@@ -481,16 +488,16 @@ footer .line-footer p a {
     width: 100%;
   }
 
-  /*Especialidades*/
+  /*habilidades*/
 
-  section.especialidades {
+  section.habilidades {
     padding: 30px 8%;
   }
 
-  section.especialidades .flex {
+  section.habilidades .flex {
     gap: 0;
   }
-  section.especialidades .especialidades-box {
+  section.habilidades .habilidades-box {
     margin-top: 20px;
   }
   /*Sobre*/
