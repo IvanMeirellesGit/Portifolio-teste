@@ -12,7 +12,7 @@
   --bg-color-secondary: #00ff08;
   --bg-color-tertiary: hsl(0, 0%, 25%);
   --bg-color-overlay: hsla(0, 0%, 0%, 0.566);
-  --shadow-color-primary: hsla(122, 100%, 50%, 0.456);
+  --shadow-color-primary: #00b3069e;
   --shadow-color-secondary: hsla(0, 0%, 100%, 0.434);
 }
 
@@ -29,6 +29,13 @@ html {
 body {
   background-color: var(--bg-color-primary);
   height: 100vh;
+  transition: 0.5s;
+}
+
+/*Checkbox lightmode*/
+
+input[type="checkbox"] {
+  display: none;
 }
 
 .interface {
@@ -91,6 +98,47 @@ header nav ul {
 header nav.menu-desktop ul li {
   display: inline-block;
   padding: 0 40px;
+}
+
+.btn-lightmode i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bi-sun-fill {
+  display: none;
+}
+.bi-moon-fill {
+  color: #ffff00;
+}
+
+/*light Theme*/
+
+.light,
+.light header {
+  background-color: var(--color-primary);
+}
+.light .bi-moon-fill {
+  display: none;
+}
+
+.light .bi-sun-fill {
+  display: block;
+  color: #ffa200;
+}
+
+/*Light header*/
+
+.light .logo h1 {
+  color: var(--bg-color-primary);
+}
+
+.light header a {
+  color: var(--color-quaternary);
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--color-tertiary);
 }
 
 /*Estilo do menu mobile*/
@@ -462,11 +510,6 @@ footer .line-footer p a {
     line-height: 35px;
   }
 
-  .menu-desktop,
-  .btn-contato {
-    display: none;
-  }
-
   section.topo-do-site .flex {
     flex-direction: column-reverse;
     gap: 60px;
@@ -514,8 +557,12 @@ footer .line-footer p a {
   .btn-social {
     text-align: center;
   }
+  .sobre .img-sobre {
+    flex-direction: column;
+    align-items: center;
+  }
   .sobre .img-sobre img {
-    width: 100%;
+    width: 70%;
   }
 
   /*Portifólio*/
