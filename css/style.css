@@ -11,9 +11,16 @@
   --bg-color-primary: #000;
   --bg-color-secondary: #00ff08;
   --bg-color-tertiary: hsl(0, 0%, 25%);
-  --bg-color-overlay: hsla(0, 0%, 0%, 0.566);
+  --bg-color-overlay: hsla(0, 0%, 0%, 0.788);
   --shadow-color-primary: #00b3069e;
-  --shadow-color-secondary: hsla(0, 0%, 100%, 0.434);
+  --shadow-color-secondary: hsla(0, 0%, 100%, 0.353);
+  --shadow-color-primary-light: rgba(0, 0, 0, 0.503);
+
+  --color-light-primary: #fafafa;
+  --color-light-secondary: #e4e5f1;
+  --color-light-tertiary: #d2d3db;
+  --color-light-quaternary: #9394a5;
+  --color-light-qunary: #484b6a;
 }
 
 /*Estilo Geral*/
@@ -62,42 +69,15 @@ form .btn-enviar input[type="submit"]:hover {
   box-shadow: 0px 0px 8px var(--shadow-color-primary);
   transform: scale(1.05);
 }
-
-/*Estilo do Cabeçalho*/
-
-header {
-  padding: 40px 4%;
+/*Button light Mode*/
+.light .btn-contato button {
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-primary);
 }
 
-header > .interface {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo h1 {
-  color: var(--color-primary);
-  cursor: pointer;
-}
-
-header a {
-  display: inline-block;
-  color: var(--color-tertiary);
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-header nav.menu-desktop a:hover {
-  color: var(--color-primary);
-  transform: scale(1.05);
-}
-
-header nav ul {
-  list-style-type: none;
-}
-
-header nav.menu-desktop ul li {
-  display: inline-block;
-  padding: 0 40px;
+button:hover,
+form .btn-enviar input[type="submit"]:hover {
+  box-shadow: 0px 0px 8px var(--shadow-color-primary-light);
 }
 
 .btn-lightmode i {
@@ -116,7 +96,7 @@ header nav.menu-desktop ul li {
 
 .light,
 .light header {
-  background-color: var(--color-primary);
+  background-color: var(--color-light-primary);
 }
 .light .bi-moon-fill {
   display: none;
@@ -127,18 +107,66 @@ header nav.menu-desktop ul li {
   color: #ffa200;
 }
 
-/*Light header*/
+/*Estilo do Cabeçalho*/
 
-.light .logo h1 {
-  color: var(--bg-color-primary);
+header {
+  padding: 40px 4%;
+  box-shadow: 3px 3px 20px var(--shadow-color-secondary);
 }
 
-.light header a {
-  color: var(--color-quaternary);
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .logo h1 {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+header a {
+  display: inline-block;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 header nav.menu-desktop a:hover {
-  color: var(--color-tertiary);
+  color: var(--color-primary);
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+header .btn-menu-header {
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+/*Light Cabeçalho*/
+
+.light header {
+  box-shadow: 3px 3px 20px var(--shadow-color-primary-light);
+}
+
+.light .logo h1 {
+  color: var(--color-light-qunary);
+}
+
+.light header a {
+  color: var(--color-light-qunary);
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--color-light-quaternary);
 }
 
 /*Estilo do menu mobile*/
@@ -207,13 +235,30 @@ header nav.menu-desktop a:hover {
   z-index: 9;
   display: none;
 }
-h2.titulo {
-  color: var(--color-primary);
-  font-size: 2.2rem;
-  text-align: center;
+
+/*Estilo Light menu mobile*/
+
+.light .menu-mobile {
+  background-color: var(--color-light-secondary);
+  box-shadow: 0px 0px 12px var(--shadow-color-primary-light);
 }
-h2.titulo span {
-  color: var(--color-secondary);
+
+.light .btn-abrir-menu i {
+  color: var(--color-light-qunary);
+}
+
+.light .menu-mobile .btn-fechar i {
+  color: var(--color-light-qunary);
+}
+
+.light .menu-mobile nav ul li a {
+  color: var(--color-light-qunary);
+  box-shadow: 0px 0px 1px var(--shadow-color-primary-light);
+}
+
+.light .menu-mobile nav ul li a:hover {
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-secondary);
 }
 
 /*Estilo topo do site*/
@@ -256,6 +301,20 @@ section.topo-do-site .flex {
   }
 }
 
+/*Estilo Topo site light*/
+
+.light .topo-do-site h1 {
+  color: var(--color-light-qunary);
+}
+
+.light .topo-do-site h1 span {
+  color: var(--color-light-quaternary);
+}
+
+.light .topo-do-site .txt-topo-site p {
+  color: var(--color-light-qunary);
+}
+
 /*Minhas habilidades*/
 
 section.habilidades {
@@ -267,6 +326,15 @@ section.habilidades .flex {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
+}
+
+h2.titulo {
+  color: var(--color-primary);
+  font-size: 2.2rem;
+  text-align: center;
+}
+h2.titulo span {
+  color: var(--color-secondary);
 }
 
 .habilidades .habilidades-box {
@@ -294,6 +362,26 @@ section.habilidades .flex {
   text-align: center;
   font-size: 1.6rem;
   margin: 15px 0px;
+}
+
+/*Classe Titulo light*/
+
+.light h2.titulo {
+  color: var(--color-light-quaternary);
+}
+.light h2.titulo span {
+  color: var(--color-light-qunary);
+}
+
+/*Estilo light Minhas habilidades*/
+
+.light .habilidades .habilidades-box {
+  background-color: var(--color-light-secondary);
+  color: var(--color-light-qunary);
+}
+
+.light .habilidades .habilidades-box:hover {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
 }
 
 /*Estilo Sobre*/
@@ -501,6 +589,10 @@ footer .line-footer p a {
     padding: 20px 8%;
   }
 
+  header .logo h1 {
+    font-size: 1.6rem;
+  }
+
   .btn-abrir-menu i {
     display: block;
   }
@@ -523,7 +615,7 @@ footer .line-footer p a {
     padding: 30px 8%;
   }
   .topo-do-site h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 30px;
   }
   .topo-do-site .txt-topo-site p {
