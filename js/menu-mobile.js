@@ -9,7 +9,6 @@ function fecharMenu(){
     menu.classList.remove('abrir-menu')
 }
 
-
 btnMenu.addEventListener('click', ()=>{
     abrirMenu();
 })

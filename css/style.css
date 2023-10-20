@@ -509,7 +509,10 @@ footer .line-footer p a {
     font-size: 2rem;
     line-height: 35px;
   }
-
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
   section.topo-do-site .flex {
     flex-direction: column-reverse;
     gap: 60px;
