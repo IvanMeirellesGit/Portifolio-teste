@@ -154,7 +154,7 @@ header .btn-menu-header {
 /*Light Cabeçalho*/
 
 .light header {
-  box-shadow: 3px 3px 20px var(--shadow-color-primary-light);
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
 }
 
 .light .logo h1 {
@@ -240,7 +240,7 @@ header nav.menu-desktop a:hover {
 
 .light .menu-mobile {
   background-color: var(--color-light-secondary);
-  box-shadow: 0px 0px 12px var(--shadow-color-primary-light);
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
 }
 
 .light .btn-abrir-menu i {
@@ -433,6 +433,28 @@ section.sobre .flex {
   box-shadow: 3px 3px 12px var(--shadow-color-secondary);
 }
 
+/*Estilo Light Sobre*/
+
+.light .sobre .txt-sobre h2 {
+  color: var(--color-light-quaternary);
+}
+
+.light .sobre .txt-sobre h2 span {
+  color: var(--color-light-qunary);
+}
+
+.light .sobre .txt-sobre p {
+  color: var(--color-light-qunary);
+}
+
+.light .btn-social button {
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-primary);
+}
+.sobre .img-sobre img {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
 /*Estilo portifólio*/
 
 section.portifolio {
@@ -485,6 +507,12 @@ section.portifolio .flex {
   transition: 0.8s;
 }
 
+/*Estilo light portifolio*/
+
+.light .img-port {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
 /*Estilo Formulario*/
 
 section.formulario {
@@ -517,7 +545,7 @@ form input::placeholder {
 }
 
 form textarea {
-  height: 200px;
+  height: 10rem;
   resize: none;
 }
 form textarea::placeholder {
@@ -537,12 +565,42 @@ form .btn-enviar input[type="submit"] {
   cursor: pointer;
   transition: 0.2s;
 }
+/*Estilo light formulario*/
 
+.light form input,
+.light form textarea {
+  background-color: var(--color-light-secondary);
+  color: var(--color-light-qunary);
+  border-radius: 15px;
+  font-size: 1rem;
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+.light form input:focus,
+.light form textarea:focus {
+  background-color: var(--color-light-tertiary);
+}
+
+.light form input::placeholder {
+  color: var(--color-light-qunary);
+}
+
+.light form textarea::placeholder {
+  color: var(--color-light-qunary);
+}
+
+.light form .btn-enviar input[type="submit"] {
+  width: 120px;
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
 /*Estilo do rodapé*/
 
 footer {
   padding: 40px 4%;
-  box-shadow: 3px 3px 12px var(--shadow-color-secondary);
+  box-shadow: 0px 0px 10px var(--shadow-color-secondary);
 }
 
 footer .flex {
@@ -574,6 +632,27 @@ footer .line-footer p a {
   color: var(--color-primary);
 }
 
+/*Estilo light Footer*/
+.light footer {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+.light footer .borda {
+  border-top: 2px solid var(--color-light-qunary);
+}
+
+.light footer .logo-footer h1 a {
+  color: var(--color-light-qunary);
+}
+
+.light footer .line-footer p i {
+  color: var(--color-light-quaternary);
+  font-size: 1.4rem;
+}
+
+.light footer .line-footer p a {
+  text-decoration: none;
+  color: var(--color-light-qunary);
+}
 /*Media*/
 
 @media screen and (max-width: 1200px) {
