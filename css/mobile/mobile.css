@@ -1,0 +1,112 @@
+/*Media*/
+
+@media screen and (max-width: 1200px) {
+  /*Classes Gerais*/
+
+  .flex {
+    flex-direction: column;
+  }
+
+  /*Cabeçalho*/
+
+  header {
+    padding: 20px 8%;
+  }
+
+  header .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  .btn-abrir-menu i {
+    display: block;
+  }
+
+  h2.titulo {
+    font-size: 2rem;
+    line-height: 35px;
+  }
+  .menu-desktop,
+  .btn-contato {
+    display: none;
+  }
+  section.topo-do-site .flex {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+  /*topo do site*/
+
+  section.topo-do-site {
+    padding: 30px 8%;
+  }
+  .topo-do-site h1 {
+    font-size: 1.8rem;
+    line-height: 30px;
+  }
+  .topo-do-site .txt-topo-site p {
+    margin: 25px 0px;
+  }
+
+  .topo-do-site .img-topo-site img {
+    width: 100%;
+  }
+
+  /*habilidades*/
+
+  section.habilidades {
+    padding: 30px 8%;
+  }
+
+  section.habilidades .flex {
+    gap: 0;
+  }
+  section.habilidades .habilidades-box {
+    margin-top: 20px;
+  }
+  /*Sobre*/
+
+  section.sobre {
+    padding: 30px 8%;
+  }
+
+  .sobre .txt-sobre h2 {
+    font-size: 2.2rem;
+    line-height: 35px;
+    text-align: center;
+  }
+  .btn-social {
+    text-align: center;
+  }
+  .sobre .img-sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+  .sobre .img-sobre img {
+    width: 70%;
+  }
+
+  /*Portifólio*/
+
+  section.portifolio {
+    padding: 30px 8%;
+  }
+
+  .img-port {
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    height: 460px;
+    margin: 0 auto;
+  }
+  section.portifolio .flex {
+    gap: 60px;
+  }
+
+  /*Footer*/
+
+  footer .flex {
+    gap: 30px;
+  }
+  footer .line-footer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,206 @@
+:root {
+  --shadow-color-primary-light: rgba(0, 0, 0, 0.503);
+
+  --color-light-primary: #fafafa;
+  --color-light-secondary: #e4e5f1;
+  --color-light-tertiary: #d2d3db;
+  --color-light-quaternary: #9394a5;
+  --color-light-qunary: #484b6a;
+}
+
+/*Checkbox lightmode*/
+input[type="checkbox"] {
+  display: none;
+}
+
+/*Button light Mode*/
+.light .btn-contato button {
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-primary);
+}
+
+.btn-lightmode i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.bi-sun-fill {
+  display: none;
+}
+.bi-moon-fill {
+  color: #ffff00;
+}
+
+/*light Theme*/
+
+.light,
+.light header {
+  background-color: var(--color-light-primary);
+}
+.light .bi-moon-fill {
+  display: none;
+}
+
+.light .bi-sun-fill {
+  display: block;
+  color: #ffa200;
+}
+
+/*Light Cabeçalho*/
+
+.light header {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
+.light .logo h1 {
+  color: var(--color-light-qunary);
+}
+
+.light header a {
+  color: var(--color-light-qunary);
+}
+
+header nav.menu-desktop a:hover {
+  color: var(--color-light-quaternary);
+}
+
+/*Estilo Light menu mobile*/
+
+.light .menu-mobile {
+  background-color: var(--color-light-secondary);
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
+.light .btn-abrir-menu i {
+  color: var(--color-light-qunary);
+}
+
+.light .menu-mobile .btn-fechar i {
+  color: var(--color-light-qunary);
+}
+
+.light .menu-mobile nav ul li a {
+  color: var(--color-light-qunary);
+  box-shadow: 0px 0px 1px var(--shadow-color-primary-light);
+}
+
+.light .menu-mobile nav ul li a:hover {
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-secondary);
+}
+
+/*Estilo Topo site light*/
+
+.light .topo-do-site h1 {
+  color: var(--color-light-qunary);
+}
+
+.light .topo-do-site h1 span {
+  color: var(--color-light-quaternary);
+}
+
+.light .topo-do-site .txt-topo-site p {
+  color: var(--color-light-qunary);
+}
+
+/*Classe Titulo light*/
+
+.light h2.titulo {
+  color: var(--color-light-quaternary);
+}
+.light h2.titulo span {
+  color: var(--color-light-qunary);
+}
+
+/*Estilo light Minhas habilidades*/
+
+.light .habilidades .habilidades-box {
+  background-color: var(--color-light-secondary);
+  color: var(--color-light-qunary);
+}
+
+.light .habilidades .habilidades-box:hover {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
+/*Estilo Light Sobre*/
+
+.light .sobre .txt-sobre h2 {
+  color: var(--color-light-quaternary);
+}
+
+.light .sobre .txt-sobre h2 span {
+  color: var(--color-light-qunary);
+}
+
+.light .sobre .txt-sobre p {
+  color: var(--color-light-qunary);
+}
+
+.light .btn-social button {
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-primary);
+}
+.sobre .img-sobre img {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
+/*Estilo light portifolio*/
+
+.light .img-port {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+
+/*Estilo light formulario*/
+
+.light form input,
+.light form textarea {
+  background-color: var(--color-light-secondary);
+  color: var(--color-light-qunary);
+  border-radius: 15px;
+  font-size: 1rem;
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+.light form input:focus,
+.light form textarea:focus {
+  background-color: var(--color-light-tertiary);
+}
+
+.light form input::placeholder {
+  color: var(--color-light-qunary);
+}
+
+.light form textarea::placeholder {
+  color: var(--color-light-qunary);
+}
+
+.light form .btn-enviar input[type="submit"] {
+  width: 120px;
+  background-color: var(--color-light-qunary);
+  color: var(--color-light-primary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/*Estilo light Footer*/
+.light footer {
+  box-shadow: 3px 3px 12px var(--shadow-color-primary-light);
+}
+.light footer .borda {
+  border-top: 2px solid var(--color-light-qunary);
+}
+
+.light footer .logo-footer h1 a {
+  color: var(--color-light-qunary);
+}
+
+.light footer .line-footer p i {
+  color: var(--color-light-quaternary);
+  font-size: 1.4rem;
+}
+
+.light footer .line-footer p a {
+  text-decoration: none;
+  color: var(--color-light-qunary);
+}
