@@ -1,0 +1,13 @@
+:root {
+  --font-primary: "Roboto", sans-serif;
+  --color-primary: #fff;
+  --color-secondary: #00ff08;
+  --color-tertiary: #7d7d7d;
+  --color-quaternary: #000000;
+  --bg-color-primary: #000;
+  --bg-color-secondary: #00ff08;
+  --bg-color-tertiary: hsl(0, 0%, 25%);
+  --bg-color-overlay: hsla(0, 0%, 0%, 0.788);
+  --shadow-color-primary: #00b3069e;
+  --shadow-color-secondary: hsla(0, 0%, 100%, 0.353);
+}
