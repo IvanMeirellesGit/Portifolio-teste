@@ -9,10 +9,11 @@
 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/lightmode/lightmode.css">
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 1200px)" href="css/mobile/mobile.css">
 
     <script src="js/menu-mobile.js" defer></script>
     <script src="js/darkmode.js" defer></script>
+    <script src="js/typewrite.js" defer></script>
 </head>
 <body>
     <header>
@@ -65,7 +66,7 @@
                 <div class="interface">
                     <div class="flex">
                         <div class="txt-topo-site">
-                            <h1 class="animate__animated animate__fadeIn">TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span></h1>
+                            <h1 class="animate__animated animate__fadeIn auto-type-finito"></h1>
                             <p>
                                 Criatividade e inovação andam lado a lado. Com uma combinação única de design impactante, funcionalidade intuitiva e otimização para resultados, estou pronto(a) para criar a presença online dos seus sonhos.
                             </p>
@@ -197,5 +198,14 @@
                 </div><!---line-footer-->
             </div>
         </footer> <!--Rodapé-->
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>            
+            var typed = new Typed (".auto-type-finito", {
+                strings: ["TRANSFORMANDO IDEIAS EM REALIDADE DIGITAL<span>.</span>"],
+                typeSpeed:110,
+                backSpeed: 60,
+                loop:false
+            })
+        </script>
 </body>
 </html>
